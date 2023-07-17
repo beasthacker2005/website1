@@ -1,0 +1,240 @@
+
+<html>
+	
+<head>
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+	const toggle = document.querySelector('.toggle-checkbox');
+	toggle.addEventListener('change', function () {
+     if (!toggle.checked) {
+          container.className = 'body';
+          part.style.backgroundColor = "#eed1ff";
+          }) 
+          </script>
+
+
+<style>
+	html{
+		-webkit-tap-highlight-color:transparent;
+
+		}
+	body{
+		background:#ececec;
+		MARGIN:0;
+		PADDING:0;
+		font-family:poppins;
+
+		}
+	.neumorphic-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ececec;
+  border-radius: 10px;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 30px;
+  color:gray;
+  font-family:sans serif;
+  text-shadow:2px 2px 4px rgba(0, 0,0,0.2), -2px -2px 4px #fff;
+}
+
+.theme-toggle {
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 30px;
+  border-radius:20px;
+  cursor: pointer;
+  background:#ececec;
+  border:1px solid #f0f0f0;
+  box-shadow:-5px -2px 5px rgba(255,255,255, 0.9), 5px 2px 5px #d5d5d5 ,
+  inset 5px 2px 5px #d5d5d5 ,-5px -2px 5px rgba(255,255,255, 0.9);
+}
+
+.theme-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.theme-toggle .toggle-button {
+  position: absolute;
+  top: 6.5;
+  left: 6;
+  width: 18px;
+  height: 18px;
+  background-color: gray;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.7);
+  transition: transform 0.3s ease-in-out;
+}
+
+.theme-toggle input[type="checkbox"]:checked + .toggle-button {
+  transform: translateX(137%);
+  background-color:orange;
+}
+
+.hero{
+	 box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2), -5px -5px 7px #fff;
+	margin-top:3;
+	margin-left:auto;
+	margin-right:auto;
+	width:85%;
+	padding:50px 0;
+	border-radius:12px;
+	background:#ececec;
+   text-align:center;
+   margin-bottom:30;
+   }
+   .hero h1{
+   	text-shadow:3px 3px 5px rgba(0, 0,0,0.2), -3px -3px 5px #fff;
+   	color:gray;
+   margin-top:-5;
+   font-size:35;
+   margin-bottom:40;
+   }
+   .hero p{
+   	text-transform:uppercase;
+   font-weight:bolder;
+ margin-bottom:40;
+   }
+   .btn{
+   	box-shadow:3px 3px 10px rgba(0, 0, 0, 0.2), -5px -5px 7px #fff;
+   	border:2px solid #ececec;
+   	border-radius:20px;
+   	padding:8px 17px;
+   background:#ececec;
+   outline:none;
+   font-size:16;
+   text-decoration:none;
+   font-weight:700;
+   transition:all 0.3s ease;
+   color:gray;
+   text-shadow:1px 1px 2px rgba(0, 0,0,0.2), -1px -1px 2px #fff;
+   }
+   .btn:hover{
+   	box-shadow:3px 3px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px #fff,inset 3px 3px 15px rgba(0, 0, 0, 0.2),inset -5px -5px 15px #fff;
+    color:orange;
+    text-shadow:1px 1px 2px rgba(0, 0,0,0.2), -1px -1px 2px #fff;
+  }
+  
+  
+  
+.nao{
+  
+  	width:100%;
+  height:auto;
+  display:flex;
+  background:#ececec;
+  align-items:center;
+ 
+  }
+  
+  .nao .con1{
+  	margin:10;
+    height:30px;
+    font-size:13px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  	background:#ececec;
+  box-shadow:5px 5px 8px rgba(0,0,0,0.1), -5px -5px 8px #fff;
+  border-radius:50px;
+ width:50%;
+ color:gray;
+ transition:all 0.3s ease;
+   text-decoration:none;
+   margin-bottom:30;
+   text-shadow:1px 1px 2px rgba(0, 0,0,0.2), -1px -1px 2px #fff;
+  }
+  .nao .con1:hover{
+  	box-shadow:5px 5px 8px rgba(0,0,0,0.1), -5px -5px 8px #fff, inset 5px 5px 8px rgba(0,0,0,0.1),inset -5px -5px 8px #fff;
+      color:orange;
+      text-shadow:1px 1px 2px rgba(0, 0,0,0.2), -1px -1px 2px #fff;
+      
+  }
+  
+  .team{
+   	display:flex;
+       width:100%;
+       height:auto;
+       background-color:#ececec;
+       align-items:center;
+       justify-content:space-evenly;
+      }
+      .team .eem{
+       	color:gray;
+      text-decoration:none;
+      text-align:center;
+      	height:150px;
+      box-shadow:5px 5px 8px rgba(0,0,0,0.1), -5px -5px 8px #fff;
+      	margin:7;
+  	background:#ececec;
+      color:gray;
+      border-radius:10px;
+         
+      }
+      .team .eem  p{
+      	font-size:16px;
+           margin-top:-11;
+      	font-weight:400;
+      color:orange;
+      }
+      .spy{
+      	background:#ececec;
+      padding:4px 13px;
+      border-radius:20px;
+    box-shadow:3px 3px 10px rgba(0, 0, 0, 0.2), -5px -5px 7px #fff;
+      color:gray;
+      font-weight:bolder;
+      text-decoration:none;
+      transition:all 0.3s ease-in-out;
+      text-shadow:1px 1px 2px rgba(0, 0,0,0.2), -1px -1px 2px #fff;
+      }
+      .spy:hover{
+      box-shadow:3px 3px 10px rgba(0, 0, 0, 0.2), -5px -5px 7px #fff,inset 3px 3px 5px rgba(0, 0, 0, 0.2),inset -3px -3px 5px #fff;	
+  color:orange;
+  text-shadow:1px 1px 2px rgba(0, 0,0,0.2), -1px -1px 2px #fff;
+  }
+</style>
+	
+	</head>
+	
+
+<body>
+
+<header class="neumorphic-header">
+  <div class="logo">ANDRO DZNS </div>
+  <label class="theme-toggle" for="toggle-checkbox">
+    <input type="checkbox" id="toggle-checkbox" />
+    <span class="toggle-button"></span>
+  </label>
+</header>
+<div class="hero">
+	<img src="u.png" style="margin-top:-20;border-radius:100px;margin-bottom:30;border:8px solid #ececec;box-shadow:5px 5px 8px rgba(0,0,0,0.3),-5px -5px 8px #fff;" width="100px" height="100px">
+	<h1> ANDRO DISIGNERS </h1>
+	<a href="#" class="btn">JOIN OUR CHANNEL</a>
+	</div>
+
+	
+		
+
+
+
+<div class="nao">
+			<a href="#" class="con1" ><h3>OUR WORKS</H3></a>
+			<a href="#" class="con1"><h3>ABOUT US</H3></a>
+			<a href="#" class="con1"><h3>CONTACT US </H3></a>
+				</div>
+				
+				<div class="team">
+					<div class="eem" ><h3 style="text-shadow:1px 1px 2px rgba(0, 0,0,0.2), -1px -1px 2px #fff;">RACHIT GFX</h3><span><p style="text-shadow:1px 1px 2px rgba(0, 0,0,0.2), -1px -1px 2px #fff;">PROFESSINAL GFX DESIGNER WITH YEARS OF EXPERIENCE</p></span><a href="#" class="spy">HIRE ME</a></div>
+					<div class="eem" ><h3 style="text-shadow:1px 1px 2px rgba(0, 0,0,0.2), -1px -1px 2px #fff;">BEAST GFX</h3><span><p style="text-shadow:1px 1px 2px rgba(0, 0,0,0.2), -1px -1px 2px #fff;">SKILLED UI AND GRAPHIC DESIGNER , WEB DEVELOPER</p></span><a href="#" class="spy">HIRE ME</a></div>
+					<div class="eem" ><h3 style="text-shadow:1px 1px 2px rgba(0, 0,0,0.2), -1px -1px 2px #fff;">SANDY UI/UX</h3><span><p style="text-shadow:1px 1px 2px rgba(0, 0,0,0.2), -1px -1px 2px #fff;">PROFESSINAL GRAPHIC AND APP-WEB UI DESIGNER </p></span><a href="#" class="spy">HIRE ME</a></div>
+					
+					</div>
+				
+				
